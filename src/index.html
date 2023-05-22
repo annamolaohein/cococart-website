@@ -12,8 +12,8 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body class="bg-yellow-500 text-gray-800">
-    <nav>
+  <body class="text-gray-800">
+    <nav class="bg-amber-400">
       <div class="container mx-auto flex justify-between items-center py-4">
         <img
           class="w-40"
@@ -43,7 +43,7 @@
       </div>
     </nav>
     <!-- hero section -->
-    <section>
+    <section class="bg-amber-400 hero-section">
       <div class="container flex mx-auto">
         <!-- left -->
         <div class="w-4/5 py-8">
@@ -75,7 +75,7 @@
         </div>
       </div>
     </section>
-    <section class="mt-6 bg-white">
+    <section class="mt-36">
       <div class="container w-2/3 py-10 mx-auto text-center">
         <h2 class="text-7xl font-bold">
           Cococart is made for local businesses.
@@ -175,20 +175,101 @@
       <div class="max-w-3xl mx-auto">
         <h3 class="text-5xl font-bold text-center">FAQs</h3>
 
-        <article class="mt-8">
-          <div
-            class="flex items-center justify-between gap-2 p-4 border border-black cursor-pointer faq-title"
-          >
-            <p class="text-xl font-bold">How much does it cost?</p>
-            <i class="fa-solid fa-add faq-icon"></i>
-          </div>
-          <div class="p-4 border border-t-0 border-black faq-content">
-            Cococart is free for small businesses! You can buy optional upgrades
-            if you want to support us. The free version of Cococart already
-            gives you more than any other ecommerce platform, but we help you
-            take online business even further with our paid plans.
-          </div>
-        </article>
+        <div class="faq-container mt-6">
+          <article>
+            <div
+              class="flex items-center justify-between gap-2 p-4 border border-black cursor-pointer faq-title"
+            >
+              <p class="text-xl font-bold">How much does it cost?</p>
+              <i class="fa-solid fa-circle-plus faq-icon"></i>
+            </div>
+            <div class="p-4 border border-t-0 border-black faq-content">
+              Cococart is free for small businesses! You can buy optional
+              upgrades if you want to support us. The free version of Cococart
+              already gives you more than any other ecommerce platform, but we
+              help you take online business even further with our paid plans.
+            </div>
+          </article>
+
+          <article>
+            <div
+              class="flex items-center justify-between gap-2 p-4 border border-black cursor-pointer faq-title"
+            >
+              <p class="text-xl font-bold">Where do my orders go?</p>
+              <i class="fa-solid fa-circle-plus faq-icon"></i>
+            </div>
+            <div class="p-4 border border-t-0 border-black faq-content">
+              We've built an order management system for you. Simply log in to
+              your admin dashboard and you'll be able to manage your orders, see
+              your earnings, add products, and more!
+            </div>
+          </article>
+          <article>
+            <div
+              class="flex items-center justify-between gap-2 p-4 border border-black cursor-pointer faq-title"
+            >
+              <p class="text-xl font-bold">How do I receiv payments?</p>
+              <i class="fa-solid fa-circle-plus faq-icon"></i>
+            </div>
+            <div class="p-4 border border-t-0 border-black faq-content">
+              You can fully customize how you wish to be paid. We support all
+              payment methods from credit cards to bank transfer, Venmo to
+              Zelle, PayNow to GCash.
+            </div>
+          </article>
+          <article>
+            <div
+              class="flex items-center justify-between gap-2 p-4 border border-black cursor-pointer faq-title"
+            >
+              <p class="text-xl font-bold">What fees are there?</p>
+              <i class="fa-solid fa-circle-plus faq-icon"></i>
+            </div>
+            <div class="p-4 border border-t-0 border-black faq-content">
+              For payments direct to your account, there are no fees. For
+              credit/debit card payments, we use Stripe.com which charges a
+              standard 1 - 4% depending on country.
+            </div>
+          </article>
+          <article>
+            <div
+              class="flex items-center justify-between gap-2 p-4 border border-black cursor-pointer faq-title"
+            >
+              <p class="text-xl font-bold">
+                How long does it take to get set up?
+              </p>
+              <i class="fa-solid fa-circle-plus faq-icon"></i>
+            </div>
+            <div class="p-4 border border-t-0 border-black faq-content">
+              Literally less than 5 minutes! You can get started right away.
+            </div>
+          </article>
+          <article>
+            <div
+              class="flex items-center justify-between gap-2 p-4 border border-black cursor-pointer faq-title"
+            >
+              <p class="text-xl font-bold">What countries do you support?</p>
+              <i class="fa-solid fa-circle-plus faq-icon"></i>
+            </div>
+            <div class="p-4 border border-t-0 border-black faq-content">
+              Anyone can use Cococart from anywhere in the world!
+            </div>
+          </article>
+          <article>
+            <div
+              class="flex items-center justify-between gap-2 p-4 border border-black cursor-pointer faq-title"
+            >
+              <p class="text-xl font-bold">
+                Where can I get in touch for corporate or custom solutions?
+              </p>
+              <i class="fa-solid fa-circle-plus faq-icon"></i>
+            </div>
+            <div class="p-4 border border-t-0 border-black faq-content">
+              If you have special requirements or want custom solutions with our
+              platform, <a href="#" class="text-blue-500">get in touch with us here</a>. For general inquiries about
+              our product, <a href="#" class="text-blue-500">send us an email here</a>.
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
