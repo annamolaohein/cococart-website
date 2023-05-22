@@ -1,12 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.faq-content {
+  height: 0;
+  display: none;
+  transition: all 300ms ease-in;
+}
+
+.faq-content.show {
+  height: auto;
+  display: block;
+}
+
 @layer components {
   .nav-link {
-    @apply text-xl font-semibold px-4 py-3 rounded-lg hover:bg-white border-[3px] border-transparent hover:border-black;
+    @apply px-4 py-3 text-xl font-semibold rounded-lg hover:bg-white border-[3px] border-transparent hover:border-black;
   }
- .btn{
-    @apply uppercase text-xl font-semibold px-4 py-3 rounded-lg bg-white border-[3px] border-transparent border-black hover:border-b-[6px];
- }
+
+  .btn {
+    @apply px-4 py-3 text-xl font-semibold uppercase bg-white rounded-lg;
+
+    box-shadow: 0 0 0 3px black;
+  }
+
+  .btn-wrapper {
+    @apply rounded-lg;
+
+    box-shadow: 0 0 0 3px black;
+    background-color: black;
+  }
+
+  .btn:hover {
+    transform: translateY(-3px);
+    transition: transform 200ms ease;
+  }
+
+  .business-logo {
+    @apply object-contain w-40 opacity-50 hover:opacity-100;
+  }
 }
