@@ -8,6 +8,11 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+select{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
 .faq-content {
   height: 0;
   display: none;
@@ -30,6 +35,20 @@ body {
   background: url("/src/images/hero-wave.svg") no-repeat;
   position: absolute;
   top: 100%;
+  z-index: -1;
+}
+
+footer{
+  position: relative;
+}
+
+footer::after {
+  content: "";
+  width: 100%;
+  height: 360px;
+  background: url("/src/images/footer-wave.svg") no-repeat;
+  position: absolute;
+  top: -100%;
   z-index: -1;
 }
 
