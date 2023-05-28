@@ -13,7 +13,7 @@
     />
   </head>
   <body class="text-gray-800">
-    <nav class="bg-amber-400">
+    <nav class="bg-amber-400 relative">
       <div class="container mx-auto flex justify-between items-center py-4">
         <!-- logo -->
         <img
@@ -22,24 +22,42 @@
           alt="Logo"
         />
 
-        <ul class="flex items-center gap-8">
-          <li><a href="#" class="nav-link">Home</a></li>
-          <li><a href="#" class="nav-link">Resources</a></li>
-          <li><a href="#" class="nav-link">We are hiring!</a></li>
-          <!-- <li class=" relative group">
-          <a href="#" class="hover:text-indigo-500">Pages</a>
-          <div class="absolute invisible group-hover:visible opacity-0 group-hover:opacity-100 shadow p-4 w-48">
-           <ul>
-            <li><a href="#" class="block hover:text-indigo-500 py-4">Portfolio Details Page</a></li>
-            <li><a href="#" class="block hover:text-indigo-500 py-4">Blog Grids Page</a></li>
-            <li><a href="#" class="block hover:text-indigo-500 py-4">Blog Details Page</a></li>
-           </ul>
+        <!-- hamburger menu -->
+        <button class="btn md:hidden burger">
+          <i class="fa-solid fa-bars"></i>
+        </button>
 
+        <!-- dropdown menu -->
+        <div
+          class="dropdown w-full bg-white hidden absolute top-full left-0 z-10"
+        >
+          <ul>
+            <li><a href="#" class="nav-link py-4 block">Home</a></li>
+            <li><a href="#" class="nav-link py-4 block">Resources</a></li>
+            <li><a href="#" class="nav-link py-4 block">We are hiring!</a></li>
+          </ul>
+        </div>
+
+        <div class="hidden md:flex">
+          <ul class="flex items-center gap-8">
+            <li><a href="#" class="nav-link">Home</a></li>
+            <li><a href="#" class="nav-link">Resources</a></li>
+            <li><a href="#" class="nav-link">We are hiring!</a></li>
+            <!-- <li class=" relative group">
+            <a href="#" class="hover:text-indigo-500">Pages</a>
+            <div class="absolute invisible group-hover:visible opacity-0 group-hover:opacity-100 shadow p-4 w-48">
+             <ul>
+              <li><a href="#" class="block hover:text-indigo-500 py-4">Portfolio Details Page</a></li>
+              <li><a href="#" class="block hover:text-indigo-500 py-4">Blog Grids Page</a></li>
+              <li><a href="#" class="block hover:text-indigo-500 py-4">Blog Details Page</a></li>
+             </ul>
+  
+            </div>
+          </li> -->
+          </ul>
+          <div class="btn-wrapper">
+            <button class="btn">Login</button>
           </div>
-        </li> -->
-        </ul>
-        <div class="btn-wrapper">
-          <button class="btn">Login</button>
         </div>
       </div>
     </nav>
