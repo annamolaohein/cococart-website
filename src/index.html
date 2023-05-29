@@ -11,10 +11,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
   </head>
   <body class="text-gray-800">
     <nav class="bg-amber-400 relative">
-      <div class="container mx-auto flex justify-between items-center py-4">
+      <div class="container flex items-center justify-between px-6 py-4 mx-auto"">
         <!-- logo -->
         <img
           class="w-40"
@@ -23,13 +25,13 @@
         />
 
         <!-- hamburger menu -->
-        <button class="btn md:hidden burger">
+        <button class="btn lg:hidden burger">
           <i class="fa-solid fa-bars"></i>
         </button>
 
         <!-- dropdown menu -->
         <div
-          class="dropdown w-full bg-white hidden absolute top-full left-0 z-10"
+          class="dropdown w-full bg-white h-0 overflow-hidden absolute top-full left-0 z-10 transition-all"
         >
           <ul>
             <li><a href="#" class="nav-link py-4 block">Home</a></li>
@@ -38,7 +40,7 @@
           </ul>
         </div>
 
-        <div class="hidden md:flex">
+        <div class="hidden lg:flex">
           <ul class="flex items-center gap-8">
             <li><a href="#" class="nav-link">Home</a></li>
             <li><a href="#" class="nav-link">Resources</a></li>
@@ -63,13 +65,19 @@
     </nav>
     <!-- hero section -->
     <section class="bg-amber-400 hero-section">
-      <div class="container flex mx-auto">
+      <div class="container flex mx-auto px-6">
         <!-- left -->
-        <div class="w-4/5 py-8">
-          <h1 class="text-7xl font-black">
+        <div
+        data-aos="fade-right"
+        data-aos-duration="1500"
+        class="flex flex-col items-center py-8 text-center md:w-4/5 sm:text-left"
+      >
+        <h1 class="text-3xl font-bold sm:text-7xl">
             Create a simple, beautiful store in minutes.
           </h1>
-          <p class="text-5xl mt-8">No code. No app required.</p>
+          <p class="mt-8 text-2xl font-light sm:text-5xl">
+            No code. No app required.
+          </p>
           <div class="flex mt-8 justify-center">
             <div class="btn-wrapper">
               <button class="btn">start my website&mdash;it's free</button>
@@ -86,7 +94,7 @@
           <p class="block mt-4">Loved by 30,000+ businesses</p>
         </div>
         <!-- right -->
-        <div class="pl-12">
+        <div data-aos="fade-left" data-aos-duration="1500" class="pl-12 md:block hidden">
           <img
             src="https://uploads-ssl.webflow.com/60f35132d5febb6f03ec9d7a/60fc05b036a77a95a30ed20b_hero-video.gif"
             alt="Preview hero image"
@@ -94,9 +102,10 @@
         </div>
       </div>
     </section>
-    <section class="mt-36">
-      <div class="container w-2/3 py-10 mx-auto text-center">
-        <h2 class="text-7xl font-bold">
+
+    <section class="mt-12 md:mt-72">
+      <div data-aos="zoom-in" data-aos-duration="500" class="container px-6 py-10 mx-auto text-center md:w-2/3">
+        <h2 class="text-3xl font-bold sm:text-7xl">
           Cococart is made for local businesses.
         </h2>
         <p class="mt-8 text-xl font-light leading-9">
@@ -111,7 +120,9 @@
           </div>
         </div>
 
-        <div class="grid max-w-3xl grid-cols-4 mx-auto mt-8 gap-8">
+        <div
+          class="grid max-w-3xl grid-cols-2 gap-8 mx-auto mt-8 sm:grid-cols-4"
+        >
           <img class="business-logo" src="images/businesses/1.png" alt="" />
           <img class="business-logo" src="images/businesses/2.png" alt="" />
           <img class="business-logo" src="images/businesses/3.png" alt="" />
@@ -123,9 +134,14 @@
         </div>
       </div>
     </section>
+
     <section class="pt-6 bg-white">
       <!-- flex-direction row -->
-      <div class="container flex mx-auto px-32 text-center">
+      <div
+      data-aos="fade-up" 
+      data-aos-duration="500"
+        class="container flex flex-col px-6 mx-auto text-center lg:px-32 sm:flex-row"
+      >
         <!-- left -->
         <div class="flex flex-col px-6 py-8 justify-center">
           <h3 class="text-5xl font-extrabold">
@@ -147,14 +163,18 @@
     </section>
 
     <section class="pt-6 bg-white">
-      <div class="container flex mx-auto px-32 text-center">
+      <div
+      data-aos="zoom-out" 
+      data-aos-duration="500"
+      class="container flex flex-col-reverse px-6 mx-auto text-center lg:px-32 sm:flex-row"
+    >
         <div class="px-6">
           <img
             src="https://uploads-ssl.webflow.com/60f35132d5febb6f03ec9d7a/60fc810de761ae96f71838db_1-2-p-1080.png"
             alt="learning curve"
           />
         </div>
-        <div class="flex flex-col px-6 py-8 justify-center w-1/2">
+        <div class="flex flex-col justify-center px-6 py-8 sm:w-1/2">
           <h3 class="text-5xl font-extrabold">
             Simple to set up. Impossible to mess up.
           </h3>
@@ -166,16 +186,21 @@
       </div>
     </section>
 
+    <!-- payment section -->
     <section class="pt-6 bg-white">
-      <div class="container flex mx-auto px-32 text-center">
-        <div class="flex flex-col px-6 py-8 justify-center w-1/2">
+      <div
+      data-aos="zoom-in-down"
+      data-aos-duration="500"
+        class="container px-6 flex flex-col mx-auto lg:px-32 text-center sm:flex-row"
+      >
+      <div class="flex flex-col px-6 py-8 justify-center">
           <h3 class="text-5xl font-extrabold">Accept all kinds of payments.</h3>
           <p class="mt-8 text-2xl font-light">
             Automatically collect payments by credit and debit card, bank
             transfer, Venmo, PayNow, GCash, and more.
           </p>
         </div>
-        <div class="px-6 w-1/2">
+        <div class="px-6">
           <img
             src="https://uploads-ssl.webflow.com/60f35132d5febb6f03ec9d7a/60f8a6a86a773f747595dccd_payments-p-1080.png"
             alt="payment"
@@ -191,7 +216,7 @@
 
     <!-- FAQs section -->
     <section class="py-6 bg-white">
-      <div class="max-w-3xl mx-auto">
+      <div class="max-w-3xl mx-auto px-6">
         <h3 class="text-5xl font-bold text-center">FAQs</h3>
 
         <div class="faq-container mt-6">
@@ -296,11 +321,11 @@
 
     <!-- steps -->
     <section class="py-6">
-      <div class="max-w-3xl mx-auto">
+      <div class="max-w-3xl mx-auto px-6">
         <h3 class="text-5xl font-extrabold text-center">
           Start a business in minutes. Not months.
         </h3>
-        <div class="flex mt-8">
+        <div class="flex mt-8 flex-col sm:flex-row sm:space-y-0">
           <article class="text-center">
             <!-- w-fit mean width: fit-content; -->
             <div
@@ -316,7 +341,7 @@
           </article>
 
           <!-- line -->
-          <div class="flex item-center h-full pt-16">
+          <div class="items-center hidden h-full pt-16 sm:flex">
             <div
               class="w-16 h-[1px] border-gray-300 border border-dashed"
             ></div>
@@ -335,7 +360,7 @@
             </p>
           </article>
 
-          <div class="flex item-center h-full pt-16">
+          <div class="items-center hidden h-full pt-16 sm:flex">
             <div
               class="w-16 h-[1px] border-gray-300 border border-dashed"
             ></div>
@@ -359,7 +384,7 @@
 
     <!-- pricing section -->
     <section class="py-6">
-      <div class="max-w-3xl mx-auto grid grid-cols-2 gap-8">
+      <div class="grid max-w-3xl grid-rows-2 gap-8 px-6 mx-auto sm:grid-cols-2">
         <article
           class="bg-amber-400 border-[3px] border-black rounded-2xl text-center p-8 space-y-4"
         >
@@ -384,9 +409,11 @@
     </section>
 
     <footer class="py-12 bg-amber-400 mt-32">
-      <div class="max-w-3xl mx-auto flex gap-12">
+      <div
+        class="flex flex-col-reverse max-w-3xl gap-12 px-6 mx-auto sm:flex-row"
+      >
         <!-- left -->
-        <div class="w-1/3">
+        <div class="sm:w-1/3">
           <!-- logo -->
           <img
             class="w-56"
@@ -404,7 +431,7 @@
         </div>
 
         <!-- right -->
-        <div class="grid grid-cols-4 flex-grow font-light">
+        <div class="grid sm:grid-cols-4 sm:grid-rows-none flex-grow font-light grid-rows-4">
           <div class="space-y-5">
             <h4 class="font-semibold">Product</h4>
             <ul class="space-y-5">
@@ -444,5 +471,9 @@
     </footer>
 
     <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
