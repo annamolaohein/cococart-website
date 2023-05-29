@@ -33,11 +33,13 @@ faqContainer.addEventListener("click", () => {
 });
 
 burger.addEventListener("click", () => {
-  if (dropdownMenu.classList.contains("hidden")) {
-    dropdownMenu.classList.remove("hidden");
+  if (dropdownMenu.classList.contains("h-0")) {
+    dropdownMenu.classList.remove("h-0");
+    dropdownMenu.style.height = '198px'
     nav.style.backgroundColor = "white";
   } else {
-    dropdownMenu.classList.add("hidden");
+    dropdownMenu.classList.add("h-0");
+    dropdownMenu.style.height = '0px'
     nav.style.backgroundColor = "#FBBE24";
   }
 });
